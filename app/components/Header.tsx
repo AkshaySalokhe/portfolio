@@ -39,9 +39,9 @@ export default function Header(): React.JSX.Element {
             <Image
               src={`${basePath}/logo/logo.png`}
               alt="Logo"
-              width={30}
+              width={100}
               height={30}
-              className="h-8 w-auto"
+              className="h-[40px]"
             />
           </Link>
 
