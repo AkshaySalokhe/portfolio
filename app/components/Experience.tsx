@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 
 interface ExperienceCard {
   id: number;
@@ -60,7 +61,7 @@ export default function Experience(): React.JSX.Element {
             >
               <div className="self-start shrink-0">
                 <Image
-                  src={card.icon}
+                  src={`${basePath}${card.icon}`}
                   alt={card.title}
                   height={60}
                   width={60}

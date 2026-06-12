@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { HiMenu, HiX } from "react-icons/hi";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -35,7 +37,7 @@ export default function Header(): React.JSX.Element {
         <div className="container mx-auto max-w-6xl flex items-center justify-between">
           <Link href="/">
             <Image
-              src="/logo/logo.png"
+              src={`${basePath}/logo/logo.png`}
               alt="Logo"
               width={100}
               height={30}

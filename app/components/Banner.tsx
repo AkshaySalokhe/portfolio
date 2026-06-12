@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Banner(): React.JSX.Element {
   const texts = ["Full Stack Developer", "MEAN/MERN Stack Developer", "Java Full Stack Developer"];
@@ -58,7 +59,7 @@ export default function Banner(): React.JSX.Element {
               <div className="lg:hidden  -top-150 z-10">
                 <div className="relative inline-block ">
                   <Image
-                    src="/assets/arrow.png"
+                    src={`${basePath}/assets/arrow.png`}
                     alt="Arrow pointer"
                     width={80}
                     height={80}
@@ -75,7 +76,7 @@ export default function Banner(): React.JSX.Element {
                 </div>
               </div>
               <Image
-                src="/assets/me.png"
+                src={`${basePath}/assets/me.png`}
                 alt="Akshay Salokhe - Full Stack Developer"
                 width={300}
                 height={300}
@@ -90,7 +91,7 @@ export default function Banner(): React.JSX.Element {
             {/* Desktop: Hello text in original position */}
             <div className="hidden lg:inline-block relative">
               <Image
-                src="/assets/arrow.png"
+                src={`${basePath}/assets/arrow.png`}
                 alt="Arrow pointer"
                 width={100}
                 height={100}
@@ -113,7 +114,7 @@ export default function Banner(): React.JSX.Element {
     <br /> don’t just{" "}
     <span className="relative inline-block">
       <Image
-        src="/assets/circle.png"
+        src={`${basePath}/assets/circle.png`}
         alt="Circle"
         width={200}
         height={200}
@@ -140,7 +141,7 @@ export default function Banner(): React.JSX.Element {
           <p className="text-lg lg:text-xl text-white/90 tracking-wide flex flex-wrap items-center justify-center lg:justify-start gap-2">
             <span>Currently, I&apos;m a Full Stack Developer at</span>
             <span className="flex items-center gap-2">
-              <Image src="/assets/webhr.webp" alt="WebHR" width={20} height={20} className="w-5 h-5" style={{ width: "auto", height: "20px" }} />
+              <Image src={`${basePath}/assets/webhr.webp`} alt="WebHR" width={20} height={20} className="w-5 h-5" style={{ width: "auto", height: "20px" }} />
               <span className="text-blue-400 font-semibold">SPECTRIX (Synventive),</span>
             </span>
           </p>
