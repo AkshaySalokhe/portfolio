@@ -4,32 +4,42 @@ import Link from "next/link";
 interface ExperienceCard {
   id: number;
   title: string;
+  role: string;
   description: string;
   icon: string;
+  duration: string;
 }
 
 const experienceCards: ExperienceCard[] = [
   {
     id: 1,
-    title: "WebHR - HR Management App",
-    description: "WebHR automates all of your company's HR processes such as Recruitment, Onboarding, Payroll, Time & Attendance, Leaves & PTO, Performance, and much more.",
-    icon: "/cards/card-1.png",
+    title: "SPECTRIX",
+    role: "Full Stack Developer",
+    duration: "(Oct 2024 - Present)",
+    description: "An industrial real-time monitoring solution for plastic injection molding processes. Built using Svelte, Node.js, and MongoDB with WebSocket-based live temperature tracking, data visualization, reusable graph components, and CSV export functionality.",
+    icon: "/cards/spectrix-logo.webp",
   },
   {
     id: 2,
-    title: "WebHR Kiosk - Time Clock Kiosk",
-    description: "WebHR Kiosk is a time clock kiosk that allows you to clock in and out of your work. It is a simple and easy to use app that allows you to clock in and out of your work.",
-    icon: "/cards/card-2.png",
+    title: "EXFO",
+    role: "Senior Software Developer",
+    duration: "(Oct 2023 - Aug 2024)",
+    description: "Built a GIS-based fiber monitoring system for EXFO using Angular, Node.js, Spring Boot, and FastAPI with PostgreSQL/PostGIS. Implemented real-time tracking with WebSockets and ActiveMQ, migrated Angular versions, and worked on modular UI libraries, GIS operations, and CI/CD pipelines.",
+    icon: "/cards/exfo-logo.webp",
   },
   {
     id: 3,
-    title: "Somezing - AI-Powered Agents",
+    title: "Calsoft",
+    role: "Senior Pricipal Development Engineer",
+    duration: "(Oct 2021 - Oct 2023)",
     description: "Somezing is a AI-Powered Agents to Automate Your Workflows. It is a simple and easy to use app that allows you to automate your workflows.",
-    icon: "/cards/card-3.png",
+    icon: "/cards/calsoft-logo.webp",
   },
   {
     id: 4,
     title: "FileIT - File Sharing App",
+    role: "Full Stack Developer",
+    duration: "(Oct 2024 - Present)",
     description: "FileIT is a file sharing app that allows you to share files with your friends and family. It is a simple and easy to use app that allows you to share files with your friends and family.",
     icon: "/cards/card-4.png",
   },
@@ -48,32 +58,26 @@ export default function Experience(): React.JSX.Element {
               key={card.id}
               className="bg-gradient-to-r from-slate-950 via-purple-950 to-slate-950  backdrop-blur-sm rounded-xl p-6 border-t-3 border-purple-700 hover:shadow-2xl hover:shadow-purple-900 flex items-center gap-4"
             >
-              <div className="mb-4 ">
+              <div className="self-start shrink-0">
                 <Image
                   src={card.icon}
                   alt={card.title}
-                  width={160}
-                  height={160}
-                  className="object-contain"
+                  height={60}
+                  width={60}
+                  className="object-contain rounded-[7px]"
                 />
               </div>
-              <div>
-              <h3 className="text-xl font-semibold text-white mb-2">
-                {card.title}
-              </h3>
-              <p className="text-white/70 text-sm mb-4">
-                {card.description}
-              </p>
-              <Link
-                href="https://ibiimemon.com/lab"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-purple-400 hover:text-purple-300 font-medium text-sm transition-colors inline-block"
-              >
-                LEARN MORE →
-              </Link>
+              <div className="self-start">
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  {card.title} <span className="text-sm font-light text-white/50">{card.duration}</span>
+                </h3>
+                <h4 className="text-l font-semibold text-white/40 mb-2">
+                  {card.role}
+                </h4>
+                <p className="text-white/70 text-sm mb-4">
+                  {card.description}
+                </p>
               </div>
-
             </div>
           ))}
         </div>
