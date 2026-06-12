@@ -32,16 +32,16 @@ const experienceCards: ExperienceCard[] = [
     title: "Calsoft",
     role: "Senior Pricipal Development Engineer",
     duration: "(Oct 2021 - Oct 2023)",
-    description: "Somezing is a AI-Powered Agents to Automate Your Workflows. It is a simple and easy to use app that allows you to automate your workflows.",
+    description: "Developed a 5G orchestration portal using Angular, Spring Boot, and PostgreSQL. Built network topology visualizations with D3.js, developed modern Angular Material UIs, and contributed to network service management and wireless configuration modules.",
     icon: "/cards/calsoft-logo.webp",
   },
   {
     id: 4,
-    title: "FileIT - File Sharing App",
-    role: "Full Stack Developer",
-    duration: "(Oct 2024 - Present)",
-    description: "FileIT is a file sharing app that allows you to share files with your friends and family. It is a simple and easy to use app that allows you to share files with your friends and family.",
-    icon: "/cards/card-4.png",
+    title: "Aloha Technology",
+    role: "Software Developer",
+    duration: "(Aug 2016 - Spet 2021)",
+    description: "Developed enterprise web applications using Angular, React.js, Node.js, PHP Zend Framework, MySQL, and MongoDB. Built fleet management, health monitoring, and building management solutions with REST APIs, GraphQL, AWS services, and real-time notifications.",
+    icon: "/cards/alohatechnology-logo.webp",
   },
 ];
 
