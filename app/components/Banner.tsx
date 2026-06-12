@@ -49,11 +49,11 @@ export default function Banner(): React.JSX.Element {
       className="min-h-screen flex items-center justify-center pt-20 px-6"
     >
       <div className="container mx-auto max-w-6xl">
-        <div className="flex flex-col lg:flex-row items-center ">
+        <div className="flex flex-col gap-[50px] lg:flex-row items-center ">
           {/* Left side - Text content */}
           {/* Right side - Character image */}
           <div className="flex justify-center lg:justify-end relative w-full lg:w-auto">
-            <div className="relative top-10">
+            <div className="relative top-10 flex flex-col">
               {/* Mobile: Hello text positioned on top of image */}
               <div className="lg:hidden  -top-150 z-10">
                 <div className="relative inline-block ">
@@ -76,22 +76,14 @@ export default function Banner(): React.JSX.Element {
               </div>
               <Image
                 src="/assets/me.png"
-                alt="Ibrahim Memon - Software Engineer and Designer"
+                alt="Akshay Salokhe - Full Stack Developer"
                 width={300}
                 height={300}
-                className=" max-w-md absolute"
+                className="max-w-md"
                 style={{ width: "auto", height: "auto" }}
                 priority
               />
-              <Image
-                src="/assets/me-glow.png"
-                alt="Ibrahim Memon - Software Engineer and Designer"
-                width={300}
-                height={300}
-                className="max-w-md "
-                style={{ width: "auto", height: "auto" }}
-                priority
-              />
+              
             </div>
           </div>
           <div className="flex-1 space-y-6 text-center lg:text-left">

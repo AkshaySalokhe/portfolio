@@ -15,14 +15,14 @@ export default function About(): React.JSX.Element {
             </span>
           </p>
         </div>
-        <Image 
-          src="/assets/illustration.png"
+        {/* <Image 
+          src="/assets/stacks.png"
           alt="Skills"
           width={800}
           height={800}
           className="object-cover mx-auto"
           style={{ width: "auto", height: "auto" }}
-        />
+        /> */}
       </div>
     </section>
   );

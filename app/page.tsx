@@ -4,6 +4,7 @@ import Experience from "./components/Experience";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import TechStacks from "./components/TechStacks";
 
 export default function Home(): React.JSX.Element {
   return (
@@ -12,6 +13,7 @@ export default function Home(): React.JSX.Element {
       <Banner />
       <Experience />
       <About />
+      <TechStacks/>
       <Projects />
       <Footer />
     </main>

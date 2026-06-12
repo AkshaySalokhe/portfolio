@@ -11,23 +11,33 @@ interface Project {
 const featuredProjects: Project[] = [
   {
     id: 1,
-    title: "NeuraWeb – Futuristic AI Website Landing Design",
-    description: "A sleek, dark-themed AI-powered landing page concept built in Figma. Designed for modern startups and futuristic digital products, it features glowing neon visuals, immersive UI, and a dynamic tone. The design encapsulates the cutting-edge possibilities of AI and tech, offering a glimpse into the future of online experiences for tech-forward companies.",
-    link: "https://www.figma.com/community/file/1441377868897233703/ai-website-landing-design",
-    image: "/projects/project-1.png",
+    title: "Fiber Monitoring & Graphical Information System (FMS)",
+    description: "Developed a fiber network monitoring platform for real-time visualization and management of optical fiber infrastructure. The application provides topology and map-based views of cables, sites, and network connections, with live status updates powered by WebSockets. Built using Angular, Node.js, Spring Boot, and PostgreSQL, while leading client communication, requirement analysis, API development, and team coordination.",
+    link: "https://www.exfo.com/en/solutions/fixed-and-cable-operators/remote-fiber-testing-and-monitoring/",
+    image: "/projects/fms.png",
   },
   {
     id: 2,
-    title: "Apple Vision Pro – HR Software Design",
-    description: "A futuristic HR software concept designed for Apple Vision Pro, built in Figma to reimagine attendance, leave tracking, and employee experience - all in one immersive interface.",
+    title: "G25: Hot Runners Temprature Control",
+    description: "Developed a real-time monitoring and process control application for the plastic injection molding industry using Svelte, Node.js, and MongoDB. Implemented WebSocket-based live temperature monitoring, interactive data visualization, reusable graph components, and CSV export functionality to enhance operational visibility and process efficiency.",
+   link: "https://gammaflux.com/hot-runner-temperature-controller-g25",
+    image: "/projects/g25.webp",
+  },
+  {
+    id: 3,
+    title: "Orchestrator Portal for 5G Technology",
+    description: "Developed an administrative portal for managing 5G network services, network functions, and hardware devices. Built using Angular, Angular Material, Spring Boot, and PostgreSQL, the platform streamlined network orchestration and service management. Contributed to client communication, requirement analysis, UI design, and REST API development to deliver a scalable and user-friendly solution.",
    link: "https://www.figma.com/community/file/1371824014208363481/apple-vision-pro-hr-software-design",
-    image: "/projects/project-2.png",
+    image: "/projects/rakuten.jpg",
   },
 ];
 
 export default function Projects(): React.JSX.Element {
   return (
     <section id="projects" className="py-20 px-6">
+      <h2 className="text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
+          Projects
+      </h2>
       <div className="container mx-auto max-w-7xl">
         {featuredProjects.map((project, index) => {
           const isEven = index % 2 === 1;
@@ -39,9 +49,7 @@ export default function Projects(): React.JSX.Element {
               }`}>
                 {/* Text Content */}
                 <div className={`${isEven ? "lg:col-start-2" : ""}`}>
-                  <p className="text-purple-400 text-lg lg:text-xl mb-2 font-medium">
-                    Featured Project
-                  </p>
+                  
                   <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">
                     {project.title}
                   </h3>
@@ -94,6 +102,7 @@ export default function Projects(): React.JSX.Element {
                         fill
                         sizes="(max-width: 1024px) 100vw, 50vw"
                         className="object-cover"
+                        style={{objectFit:"fill"}}
                       />
                     </div>
                   </div>
