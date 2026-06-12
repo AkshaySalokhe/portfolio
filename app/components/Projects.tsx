@@ -13,21 +13,18 @@ const featuredProjects: Project[] = [
     id: 1,
     title: "Fiber Monitoring & Graphical Information System (FMS)",
     description: "Developed a fiber network monitoring platform for real-time visualization and management of optical fiber infrastructure. The application provides topology and map-based views of cables, sites, and network connections, with live status updates powered by WebSockets. Built using Angular, Node.js, Spring Boot, and PostgreSQL, while leading client communication, requirement analysis, API development, and team coordination.",
-    link: "https://www.exfo.com/en/solutions/fixed-and-cable-operators/remote-fiber-testing-and-monitoring/",
     image: "/projects/fms.png",
   },
   {
     id: 2,
     title: "G25: Hot Runners Temprature Control",
     description: "Developed a real-time monitoring and process control application for the plastic injection molding industry using Svelte, Node.js, and MongoDB. Implemented WebSocket-based live temperature monitoring, interactive data visualization, reusable graph components, and CSV export functionality to enhance operational visibility and process efficiency.",
-   link: "https://gammaflux.com/hot-runner-temperature-controller-g25",
     image: "/projects/g25.webp",
   },
   {
     id: 3,
     title: "Orchestrator Portal for 5G Technology",
     description: "Developed an administrative portal for managing 5G network services, network functions, and hardware devices. Built using Angular, Angular Material, Spring Boot, and PostgreSQL, the platform streamlined network orchestration and service management. Contributed to client communication, requirement analysis, UI design, and REST API development to deliver a scalable and user-friendly solution.",
-   link: "https://www.figma.com/community/file/1371824014208363481/apple-vision-pro-hr-software-design",
     image: "/projects/rakuten.jpg",
   },
 ];
